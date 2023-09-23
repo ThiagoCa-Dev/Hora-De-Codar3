@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de codar 3</title>
+</head>
+
+<body>
+    <script>
+
+        //Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+        var soma = 0;
+var media;
+var valor1 = parseInt(prompt("Digite o primeiro valor"));
+var valor2 = parseInt(prompt("Digite o segundo valor"));
+
+if (valor1 >= valor2) {
+    alert("O primeiro valor deve ser menor que o segundo");
+} else {
+    for (var i = valor1; i <= valor2; i++) {
+        soma += i;
+    }
+
+    media = soma / (valor2 - valor1 + 1);
+
+    document.write("A média dos valores informados é " + media);
+}
+
+
+    </script>
+</body>
+
+</html>
